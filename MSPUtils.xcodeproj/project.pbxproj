@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A13D49E2286D3CCF00EBDB79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A13D49E1286D3CCF00EBDB79 /* main.m */; };
+		A1712D94286D3D38003684CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A1712D93286D3D38003684CD /* main.c */; };
+		A1712D96286D3D9B003684CD /* msputils.m in Sources */ = {isa = PBXBuildFile; fileRef = A1712D95286D3D9B003684CD /* msputils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		A13D49DE286D3CCF00EBDB79 /* MSPUtils */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MSPUtils; sourceTree = BUILT_PRODUCTS_DIR; };
-		A13D49E1286D3CCF00EBDB79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1712D93286D3D38003684CD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A1712D95286D3D9B003684CD /* msputils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = msputils.m; sourceTree = "<group>"; };
+		A1712D97286D3DAD003684CD /* msputils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = msputils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		A13D49E0286D3CCF00EBDB79 /* MSPUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A13D49E1286D3CCF00EBDB79 /* main.m */,
+				A1712D93286D3D38003684CD /* main.c */,
+				A1712D95286D3D9B003684CD /* msputils.m */,
+				A1712D97286D3DAD003684CD /* msputils.h */,
 			);
 			path = MSPUtils;
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13D49E2286D3CCF00EBDB79 /* main.m in Sources */,
+				A1712D96286D3D9B003684CD /* msputils.m in Sources */,
+				A1712D94286D3D38003684CD /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +140,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -192,7 +198,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
