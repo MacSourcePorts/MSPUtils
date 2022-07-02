@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		A1712D94286D3D38003684CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A1712D93286D3D38003684CD /* main.c */; };
 		A1712D96286D3D9B003684CD /* msputils.m in Sources */ = {isa = PBXBuildFile; fileRef = A1712D95286D3D9B003684CD /* msputils.m */; };
+		A1DAACDA286FAFB600306B85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAACD9286FAFB600306B85 /* AppDelegate.m */; };
+		A1DAACDD286FAFB600306B85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAACDC286FAFB600306B85 /* ViewController.m */; };
+		A1DAACDF286FAFBB00306B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DAACDE286FAFBB00306B85 /* Assets.xcassets */; };
+		A1DAACE2286FAFBB00306B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DAACE0286FAFBB00306B85 /* Main.storyboard */; };
+		A1DAACE9286FAFD200306B85 /* msputils.m in Sources */ = {isa = PBXBuildFile; fileRef = A1712D95286D3D9B003684CD /* msputils.m */; };
+		A1DAACEB286FB02A00306B85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAACE3286FAFBB00306B85 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,14 +30,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A13D49DE286D3CCF00EBDB79 /* MSPUtils */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MSPUtils; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13D49DE286D3CCF00EBDB79 /* MSPUtilsTestCL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MSPUtilsTestCL; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1712D93286D3D38003684CD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A1712D95286D3D9B003684CD /* msputils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = msputils.m; sourceTree = "<group>"; };
 		A1712D97286D3DAD003684CD /* msputils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = msputils.h; sourceTree = "<group>"; };
+		A1DAACD6286FAFB600306B85 /* MSPUtilsTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSPUtilsTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DAACD8286FAFB600306B85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1DAACD9286FAFB600306B85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1DAACDB286FAFB600306B85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A1DAACDC286FAFB600306B85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1DAACDE286FAFBB00306B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1DAACE1286FAFBB00306B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1DAACE3286FAFBB00306B85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1DAACE5286FAFBB00306B85 /* MSPUtilsTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MSPUtilsTestApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A13D49DB286D3CCF00EBDB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DAACD3286FAFB600306B85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,7 +66,9 @@
 		A13D49D5286D3CCE00EBDB79 = {
 			isa = PBXGroup;
 			children = (
+				A1DAACD1286FAEE800306B85 /* MSPUtilsTestCL */,
 				A13D49E0286D3CCF00EBDB79 /* MSPUtils */,
+				A1DAACD7286FAFB600306B85 /* MSPUtilsTestApp */,
 				A13D49DF286D3CCF00EBDB79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,7 +76,8 @@
 		A13D49DF286D3CCF00EBDB79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A13D49DE286D3CCF00EBDB79 /* MSPUtils */,
+				A13D49DE286D3CCF00EBDB79 /* MSPUtilsTestCL */,
+				A1DAACD6286FAFB600306B85 /* MSPUtilsTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,19 +85,41 @@
 		A13D49E0286D3CCF00EBDB79 /* MSPUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A1712D93286D3D38003684CD /* main.c */,
 				A1712D95286D3D9B003684CD /* msputils.m */,
 				A1712D97286D3DAD003684CD /* msputils.h */,
 			);
 			path = MSPUtils;
 			sourceTree = "<group>";
 		};
+		A1DAACD1286FAEE800306B85 /* MSPUtilsTestCL */ = {
+			isa = PBXGroup;
+			children = (
+				A1712D93286D3D38003684CD /* main.c */,
+			);
+			path = MSPUtilsTestCL;
+			sourceTree = "<group>";
+		};
+		A1DAACD7286FAFB600306B85 /* MSPUtilsTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAACD8286FAFB600306B85 /* AppDelegate.h */,
+				A1DAACD9286FAFB600306B85 /* AppDelegate.m */,
+				A1DAACDB286FAFB600306B85 /* ViewController.h */,
+				A1DAACDC286FAFB600306B85 /* ViewController.m */,
+				A1DAACDE286FAFBB00306B85 /* Assets.xcassets */,
+				A1DAACE0286FAFBB00306B85 /* Main.storyboard */,
+				A1DAACE3286FAFBB00306B85 /* main.m */,
+				A1DAACE5286FAFBB00306B85 /* MSPUtilsTestApp.entitlements */,
+			);
+			path = MSPUtilsTestApp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A13D49DD286D3CCF00EBDB79 /* MSPUtils */ = {
+		A13D49DD286D3CCF00EBDB79 /* MSPUtilsTestCL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A13D49E5286D3CCF00EBDB79 /* Build configuration list for PBXNativeTarget "MSPUtils" */;
+			buildConfigurationList = A13D49E5286D3CCF00EBDB79 /* Build configuration list for PBXNativeTarget "MSPUtilsTestCL" */;
 			buildPhases = (
 				A13D49DA286D3CCF00EBDB79 /* Sources */,
 				A13D49DB286D3CCF00EBDB79 /* Frameworks */,
@@ -82,10 +129,27 @@
 			);
 			dependencies = (
 			);
-			name = MSPUtils;
+			name = MSPUtilsTestCL;
 			productName = MSPUtils;
-			productReference = A13D49DE286D3CCF00EBDB79 /* MSPUtils */;
+			productReference = A13D49DE286D3CCF00EBDB79 /* MSPUtilsTestCL */;
 			productType = "com.apple.product-type.tool";
+		};
+		A1DAACD5286FAFB600306B85 /* MSPUtilsTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DAACE6286FAFBB00306B85 /* Build configuration list for PBXNativeTarget "MSPUtilsTestApp" */;
+			buildPhases = (
+				A1DAACD2286FAFB600306B85 /* Sources */,
+				A1DAACD3286FAFB600306B85 /* Frameworks */,
+				A1DAACD4286FAFB600306B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSPUtilsTestApp;
+			productName = MSPUtilsTestApp;
+			productReference = A1DAACD6286FAFB600306B85 /* MSPUtilsTestApp.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +161,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					A13D49DD286D3CCF00EBDB79 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					A1DAACD5286FAFB600306B85 = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
@@ -114,10 +181,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A13D49DD286D3CCF00EBDB79 /* MSPUtils */,
+				A13D49DD286D3CCF00EBDB79 /* MSPUtilsTestCL */,
+				A1DAACD5286FAFB600306B85 /* MSPUtilsTestApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1DAACD4286FAFB600306B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DAACDF286FAFBB00306B85 /* Assets.xcassets in Resources */,
+				A1DAACE2286FAFBB00306B85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A13D49DA286D3CCF00EBDB79 /* Sources */ = {
@@ -129,7 +209,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1DAACD2286FAFB600306B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DAACDD286FAFB600306B85 /* ViewController.m in Sources */,
+				A1DAACE9286FAFD200306B85 /* msputils.m in Sources */,
+				A1DAACEB286FB02A00306B85 /* main.m in Sources */,
+				A1DAACDA286FAFB600306B85 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1DAACE0286FAFBB00306B85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1DAACE1286FAFBB00306B85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A13D49E3286D3CCF00EBDB79 /* Debug */ = {
@@ -257,6 +359,60 @@
 			};
 			name = Release;
 		};
+		A1DAACE7286FAFBB00306B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = MSPUtilsTestApp/MSPUtilsTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macsourceports.MSPUtilsTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		A1DAACE8286FAFBB00306B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = MSPUtilsTestApp/MSPUtilsTestApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macsourceports.MSPUtilsTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -269,11 +425,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A13D49E5286D3CCF00EBDB79 /* Build configuration list for PBXNativeTarget "MSPUtils" */ = {
+		A13D49E5286D3CCF00EBDB79 /* Build configuration list for PBXNativeTarget "MSPUtilsTestCL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A13D49E6286D3CCF00EBDB79 /* Debug */,
 				A13D49E7286D3CCF00EBDB79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DAACE6286FAFBB00306B85 /* Build configuration list for PBXNativeTarget "MSPUtilsTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DAACE7286FAFBB00306B85 /* Debug */,
+				A1DAACE8286FAFBB00306B85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

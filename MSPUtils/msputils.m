@@ -30,7 +30,8 @@ void displayMessageBox(const char* title, const char* message, int isError) {
         alert.messageText = titleStr;
         alert.informativeText = msgStr;
 
-        [alert performSelectorOnMainThread:@selector(runModal) withObject:nil waitUntilDone:NO];
+//        [alert performSelectorOnMainThread:@selector(runModal) withObject:nil waitUntilDone:NO];
+        [alert runModal];
     }
 
     [alert release];
