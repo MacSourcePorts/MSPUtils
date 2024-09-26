@@ -20,6 +20,11 @@ const char* getBundlePath() {
     return [bundlePath cStringUsingEncoding:NSASCIIStringEncoding];
 }
 
+const char* getBundlePathSubdir(const char* subdir) {
+    NSString *bundlePath = [[[[NSBundle mainBundle] bundleURL] path] stringByAppendingPathComponent:[NSString stringWithUTF8String:subdir]];
+    return [bundlePath cStringUsingEncoding:NSASCIIStringEncoding];
+}
+
 void displayMessageBox(const char* title, const char* message, int isError) {
     NSAlert *alert = [NSAlert new];
     NSString *titleStr = [NSString stringWithCString:title encoding:NSASCIIStringEncoding];
